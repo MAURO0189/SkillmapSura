@@ -23,7 +23,7 @@ export function Formulario() {
         text: "Something went wrong!",
       });
     } else {
-      router("/home");
+      router("/load");
     }
   }
 
@@ -34,8 +34,19 @@ export function Formulario() {
           <div className="col-12 col-md-6">
             <img src="../../src/assets/logo.png" alt="" className="img-fluid" />
             <form className="border rounded p-4" onSubmit={procesarFormulario}>
-              <h2>Controla tu salud</h2>
-
+              <h2>Ingresa a tu ruta de aprendizaje</h2>
+              <br />
+              <div>
+                <select
+                  className="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>Tipo documento</option>
+                  <option value="1">CC</option>
+                  <option value="2">TI</option>
+                  <option value="3">ID</option>
+                </select>
+              </div>
               <div className="input-group mb-3 mt-4">
                 <span className="input-group-text" id="basic-addon1">
                   <i className="bi bi-person-vcard"></i>
