@@ -14,7 +14,6 @@ function Home() {
       confirmButtonText: "Cerrar",
     });
   };
-
   return (
     <>
       <h1>Ruta de Aprendizaje</h1>
