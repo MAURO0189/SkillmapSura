@@ -9,7 +9,7 @@ export function Formulario() {
 
   let router = useNavigate();
 
-  function procesarFormulario(e) {
+  function handleSubmit(e) {
     e.preventDefault();
 
     let search = baseAdmin.find(function (usuario) {
@@ -33,7 +33,7 @@ export function Formulario() {
         <div className="row justify-content-center text-center">
           <div className="col-12 col-md-6">
             <img src="../../src/assets/logo.png" alt="" className="img-fluid" />
-            <form className="border rounded p-4" onSubmit={procesarFormulario}>
+            <form className="border rounded p-4" onSubmit={handleSubmit}>
               <h2>Ingresa a tu ruta de aprendizaje</h2>
               <br />
               <div>
